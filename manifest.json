@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "xwrapper",
+    "description": "xwrapper",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "src/assets/logo.png"
+    }
+}
