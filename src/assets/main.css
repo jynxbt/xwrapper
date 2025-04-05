@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+body {
+    @apply bg-black text-[#e7e9ea];
+    user-select: none;
+}
