@@ -2,16 +2,19 @@
     "manifest_version": 3,
     "name": "xwrapper",
     "description": "xwrapper",
-    "permissions": ["storage", "tabs"], 
-    "version": "1.0",
+    "permissions": ["scripting", "activeTab", "storage"],
     "action": {
-        "default_popup": "index.html",
-        "default_icon": "src/assets/logo.png"
+      "default_popup": "index.html"
     },
     "content_scripts": [
       {
-        "matches": ["https://twitter.com/*", "https://x.com/*"],
-        //   "js": ["content.js"]
+        "matches": ["*://twitter.com/*", "*://x.com/*"],
+        "js": ["content.js"]
       }
+    ],
+    "host_permissions": [
+      "*://twitter.com/*",
+      "*://x.com/*"
     ]
-}
+  }
+  
