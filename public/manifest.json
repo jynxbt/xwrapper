@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "xwrapper",
+    "description": "xwrapper",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*", "*://x.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": [
+      "*://twitter.com/*",
+      "*://x.com/*"
+    ]
+  }
+  
